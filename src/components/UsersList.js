@@ -5,7 +5,7 @@ const UsersList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('https://my-backend-abgs.onrender.com/users')
+    axios.get('http://localhost:3002/users')
       .then(response => setUsers(response.data))
       .catch(error => console.error('Error fetching users:', error));
   }, []);
