@@ -8,7 +8,7 @@ const AddUser = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3002/addUser', { name, email, password })
+    axios.post('https://my-backend-abgs.onrender.com/addUser', { name, email, password })
       .then(response => {
         console.log('User added:', response.data);
         alert('User added successfully!');
